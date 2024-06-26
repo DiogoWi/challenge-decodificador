@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    /* HUE das cores */
+    --cor-primaria: 227; /* #F3F5FC */
+    --cor-secundaria: 213; /* #0A3871 */
+    /* --cor-terciaria: 210; #CED4DA */
+
+    --fonte: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(var(--cor-primaria), 60%, 97%);
+}
+
+main {
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    max-width: 1440px;
+    padding: 40px;
+    gap: 80px;
+}
+
+main > img {
+    height: 48px;
+}
+
+#section_texto {
+    width: 680px;
+}
+
+textarea {
+    outline: none;
+    background: none;
+    border: none;
+    resize: none;
+    width: 100%;
+    font-family: var(--fonte);
+}
+
+#texto {
+    font-size: 3.2rem;
+    font-weight: 400;
+    height: calc(100% - 230px); /* 100% - 213px(128px(margin-top) - 67(botões) - 18px(aviso) - 17px(margin-bottom))*/
+    margin-top: 128px;
+    color: hsl(var(--cor-secundaria), 84%, 24%);
+}
+
+#texto::placeholder {
+    color: hsl(var(--cor-secundaria), 84%, 24%);
+}
+
+#section_texto > p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-family: var(--fonte);
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+}
+
+#botoes button {
+    height: 100%;
+    width: 48%;
+    background-color: hsl(var(--cor-secundaria), 84%, 24%);
+    border-radius: 24px;
+    border: 1px solid hsl(var(--cor-secundaria), 84%, 24%);
+    font-family: var(--fonte);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+#botoes button:hover {
+    background-color: hsl(var(--cor-secundaria), 84%, 17%);
+}
+
+#botoes button:nth-child(2) {
+    background-color: transparent;
+    color: hsl(var(--cor-secundaria), 84%, 24%);
+}
+
+#botoes button:nth-child(2):hover {
+    background-color: hsl(var(--cor-primaria), 14%, 83%);
+}
+
+#section_resposta {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#section_resposta textarea {
+    display: none;
+}
+
+#section_resposta h3 {
+    font-size: 2.4rem;
+    font-family: var(--fonte);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+#section_resposta p {
+    font-size: 1.6rem;
+    font-family: var(--fonte);
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    font-family: var(--fonte);
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: hsl(var(--cor-secundaria), 84%, 24%);
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+    columns: 2;
+    list-style: none;
+    width: 25%;
+    margin-top: 20px;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: white;
+}
+
+footer ion-icon {
+    font-size: 40px;
+}
