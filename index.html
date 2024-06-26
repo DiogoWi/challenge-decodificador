@@ -6,22 +6,23 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Decodificador</title>
 </head>
 <body>
     <main>
         <img src="images/logo.png" alt="logo da Alura">
-        <section>
-            <input type="text" placeholder="Digite seu texto">
+        <section id="section_texto">
+            <textarea id="texto" placeholder="Digite seu texto"></textarea>
             <p><img src="images/aviso.png" alt="aviso">Apenas letras minúsculas e sem acento.</p>
-            <div>
+            <div id="botoes">
                 <button>Criptografar</button>
                 <button>Descriptografar</button>
             </div>
         </section>
-        <section>
+        <section id="section_resposta">
             <textarea></textarea>
-            <div>
+            <div id="nenhum_texto">
                 <img src="images/nenhuma_imagem.svg" alt="boneco com uma lupa">
                 <div>
                     <h3>Nenhuma mensagem encontrada</h3>
@@ -33,10 +34,10 @@
     <footer>
         <p>Feito por: <strong>Diogo Willian da Silva Rodrigues</strong></p>
         <ul>
-            <li><a href="https://www.linkedin.com/in/diogo-willian/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="https://github.com/DiogoWi"><ion-icon name="logo-github"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/diogo.willian.18062/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="https://x.com/DiogoWillian12"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/diogo-willian/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://github.com/DiogoWi" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/diogo.willian.18062/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://x.com/DiogoWillian12" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
         </ul>
     </footer>
 </body>
