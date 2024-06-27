@@ -4,8 +4,7 @@
     font-size: 62.5%;
 
     /* HUE das cores */
-    --cor-primaria: 227; /* #F3F5FC */
-    --cor-secundaria: 213; /* #0A3871 */
+    --cor-primaria: 213; /* #0A3871 */
 
     --fonte: "Inter", sans-serif;
 }
@@ -14,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .3s;
 }
 
 body {
@@ -48,7 +48,6 @@ menu {
     border-radius: 800px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     opacity: 0;
-    transition: all .3s;
     z-index: 100;
 }
 
@@ -68,6 +67,18 @@ menu > button {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+menu > button:nth-child(1) {
+    background-color: hsl(213, 84%, 24%);
+}
+
+menu > button:nth-child(2) {
+    background-color: hsl(0, 84%, 24%);
+}
+
+menu > button:nth-child(3) {
+    background-color: hsl(113, 84%, 24%);
 }
 
 #section_texto {
@@ -90,11 +101,11 @@ textarea {
     font-weight: 400;
     height: 100%;
     margin-top: 128px;
-    color: hsl(var(--cor-secundaria), 84%, 24%);
+    color: hsl(var(--cor-primaria), 84%, 24%);
 }
 
 #texto::placeholder {
-    color: hsl(var(--cor-secundaria), 84%, 24%);
+    color: hsl(var(--cor-primaria), 84%, 24%);
 }
 
 #section_texto > p {
@@ -115,9 +126,9 @@ textarea {
 #botoes button {
     height: 67px;
     width: 48%;
-    background-color: hsl(var(--cor-secundaria), 84%, 24%);
+    background-color: hsl(var(--cor-primaria), 84%, 24%);
     border-radius: 24px;
-    border: 1px solid hsl(var(--cor-secundaria), 84%, 24%);
+    border: 1px solid hsl(var(--cor-primaria), 84%, 24%);
     font-family: var(--fonte);
     font-size: 1.6rem;
     font-weight: 400;
@@ -126,12 +137,12 @@ textarea {
 }
 
 #botoes button:hover {
-    background-color: hsl(var(--cor-secundaria), 84%, 17%);
+    background-color: hsl(var(--cor-primaria), 84%, 17%);
 }
 
 #botoes button:nth-child(2) {
     background-color: transparent;
-    color: hsl(var(--cor-secundaria), 84%, 24%);
+    color: hsl(var(--cor-primaria), 84%, 24%);
 }
 
 #botoes button:nth-child(2):hover {
@@ -168,10 +179,10 @@ textarea {
     font-family: var(--fonte);
     font-size: 1.6rem;
     font-weight: 400;
-    border: 1px solid hsl(var(--cor-secundaria), 84%, 24%);
+    border: 1px solid hsl(var(--cor-primaria), 84%, 24%);
     background-color: transparent;
     border-radius: 24px;
-    color: hsl(var(--cor-secundaria), 84%, 24%);
+    color: hsl(var(--cor-primaria), 84%, 24%);
     cursor: pointer;
     transition: all .2s;
 }
@@ -181,7 +192,7 @@ textarea {
 }
 
 #copiar.copiado {
-    background-color: hsl(var(--cor-secundaria), 84%, 24%);
+    background-color: hsl(var(--cor-primaria), 84%, 24%);
     color: white;
 }
 
@@ -209,7 +220,7 @@ footer {
     font-family: var(--fonte);
     font-size: 1.8rem;
     font-weight: 400;
-    background-color: hsl(var(--cor-secundaria), 84%, 24%);
+    background-color: hsl(var(--cor-primaria), 84%, 24%);
     color: white;
     padding: 20px;
 }

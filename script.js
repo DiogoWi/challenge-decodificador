@@ -109,3 +109,12 @@ logo.addEventListener('click', () => {
         }, 100);
     }
 })
+
+// função alterar cor
+const botoes = [...document.querySelectorAll('menu > button')];
+
+botoes.map((element) => {
+    element.addEventListener('click', () => {
+        document.documentElement.style.setProperty('--cor-primaria', element.value);
+    })
+});
