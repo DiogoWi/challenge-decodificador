@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" defer></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Decodificador</title>
@@ -16,12 +17,12 @@
             <textarea id="texto" placeholder="Digite seu texto"></textarea>
             <p><img src="images/aviso.png" alt="aviso">Apenas letras minúsculas e sem acento.</p>
             <div id="botoes">
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
+                <button id="criptografar">Criptografar</button>
+                <button id="descriptografar">Descriptografar</button>
             </div>
         </section>
         <section id="section_resposta">
-            <textarea></textarea>
+            <textarea id="resposta" readonly></textarea>
             <div id="nenhum_texto">
                 <img src="images/nenhuma_imagem.svg" alt="boneco com uma lupa">
                 <div>
