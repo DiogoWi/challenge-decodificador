@@ -1,3 +1,4 @@
+// funções criptografar/descriptografar
 const botaoCriptografar = document.querySelector('#criptografar');
 const inputTexto = document.querySelector('#texto');
 
@@ -32,13 +33,6 @@ botaoCriptografar.addEventListener('click', () => {
     respostaTexto.value = texto;
 });
 
-inputTexto.addEventListener('input', () => {
-    if (nenhumTexto.style.display == 'none') {
-        containerResposta.style.display = 'none';
-        nenhumTexto.style.display = 'block';
-    }
-});
-
 const botaoDescriptografar = document.querySelector('#descriptografar');
 
 botaoDescriptografar.addEventListener('click', () => {
@@ -68,6 +62,15 @@ botaoDescriptografar.addEventListener('click', () => {
     respostaTexto.value = texto;
 });
 
+// função limpar ao alterar
+inputTexto.addEventListener('input', () => {
+    if (nenhumTexto.style.display == 'none') {
+        containerResposta.style.display = 'none';
+        nenhumTexto.style.display = 'block';
+    }
+});
+
+// função copiar texto resposta
 const botaoCopiar = document.querySelector('#copiar');
 
 botaoCopiar.addEventListener('click', () => {
