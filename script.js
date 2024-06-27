@@ -10,6 +10,15 @@ botaoCriptografar.addEventListener('click', () => {
         return;
     }
 
+    regex = /([a-z0-9\s])/
+
+    for (const i of inputTexto.value) {
+        if (!regex.test(i)) {
+            alert('Por favor não use letras maiúsculas nem mesmo caracteres especiais!!!');
+            return
+        }
+    }
+
     let texto = inputTexto.value;
 
     texto = texto.replace(/e/g, "enter");
@@ -35,6 +44,15 @@ const botaoDescriptografar = document.querySelector('#descriptografar');
 botaoDescriptografar.addEventListener('click', () => {
     if (inputTexto.value == '') {
         return;
+    }
+
+    regex = /([a-z0-9\s])/
+
+    for (const i of inputTexto.value) {
+        if (!regex.test(i)) {
+            alert('Por favor não use letras maiúsculas nem mesmo caracteres especiais!!!');
+            return
+        }
     }
 
     let texto = inputTexto.value;
