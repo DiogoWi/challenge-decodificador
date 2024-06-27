@@ -29,40 +29,30 @@ main {
     gap: 80px;
 }
 
-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    border: 1px solid red;
-    height: 50px;
-    width: 120px;
-    overflow: hidden;
-}
-
 #logo {
     height: 48px;
-    width: fit-content;
+    width: 120px;
     cursor: pointer;
-    border: 1px solid green;
 }
 
-menu > div {
-    position: relative;
-    display: flex;
+menu {
+    position: absolute;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 20px;
-    background-color: transparent;
-    border-radius: 800px;
     height: 176px;
-    width: 100%;
+    width: 120px;
+    background-color: hsl(var(--cor-primaria), 60%, 97%);
+    border-radius: 800px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: all .3s;
+    z-index: 100;
 }
 
-menu > div::before {
+menu::before {
     content: '';
     position: absolute;
     width: 50%;
@@ -72,7 +62,7 @@ menu > div::before {
     z-index: -1;
 }
 
-menu > div > button {
+menu > button {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -274,6 +264,10 @@ footer ion-icon {
         height: auto;
     }
 
+    #logo {
+        align-self: flex-start;
+    }
+    
     menu {
         align-self: flex-start;
     }

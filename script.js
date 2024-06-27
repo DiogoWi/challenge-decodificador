@@ -87,3 +87,25 @@ botaoCopiar.addEventListener('click', () => {
         });
     }
 })
+
+// função do menu
+const logo = document.querySelector('#logo');
+const menu = document.querySelector('menu');
+
+logo.addEventListener('click', () => {
+    menu.classList.toggle('ativado');
+
+    if (menu.classList == 'ativado') {
+        menu.style.display = 'flex';
+        setTimeout(() => {
+            menu.style.transform = 'translateY(70px)';
+            menu.style.opacity = '1';
+        }, 100);
+    } else {
+        menu.style.transform = 'translateY(0)';
+        menu.style.opacity = '0';
+        setTimeout(() => {
+            menu.style.display = 'none';
+        }, 100);
+    }
+})
