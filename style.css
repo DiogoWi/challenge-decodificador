@@ -31,8 +31,12 @@ main {
 
 #logo {
     height: 48px;
-    width: 120px;
+    width: 139px;
     cursor: pointer;
+}
+
+#logo path {
+    fill: hsl(var(--cor-primaria), 84%, 24%);
 }
 
 menu {
@@ -196,11 +200,16 @@ textarea {
     color: white;
 }
 
-#section_resposta img {
+#nenhum_texto > svg {
     width: 100%;
+    height: fit-content;
 }
 
-#section_resposta h3 {
+#nenhum_texto > svg :where(path:nth-child(24), path:nth-child(25), path:nth-child(26), path:nth-child(27), path:nth-child(28), path:nth-child(29), path:nth-child(30), path:nth-child(31), path:nth-child(78), path:nth-child(92)) {
+    fill: hsl(var(--cor-primaria), 84%, 24%);
+}
+
+#nenhum_texto h3 {
     font-size: 2.4rem;
     font-family: var(--fonte);
     font-weight: 700;
@@ -209,7 +218,7 @@ textarea {
     margin-bottom: 16px;
 }
 
-#section_resposta p {
+#nenhum_texto p {
     font-size: 1.6rem;
     font-family: var(--fonte);
     font-weight: 400;
@@ -277,10 +286,12 @@ footer ion-icon {
 
     #logo {
         align-self: flex-start;
+        width: 80px;
     }
     
     menu {
         align-self: flex-start;
+        width: 80px;
     }
 
     #section_texto {
@@ -302,7 +313,7 @@ footer ion-icon {
         height: 400px;
     }
     
-    #nenhum_texto img {
+    #nenhum_texto svg {
         display: none;
     }
 
