@@ -1,6 +1,7 @@
 const botaoCriptografar = document.querySelector('#criptografar');
 const inputTexto = document.querySelector('#texto');
 
+const containerResposta = document.querySelector('#container_resposta');
 const respostaTexto = document.querySelector('#resposta');
 const nenhumTexto = document.querySelector('#nenhum_texto');
 
@@ -14,13 +15,13 @@ botaoCriptografar.addEventListener('click', () => {
     texto = texto.replace(/u/g, "ufat");
 
     nenhumTexto.style.display = 'none';
-    respostaTexto.style.display = 'block';
+    containerResposta.style.display = 'flex';
     respostaTexto.value = texto;
 });
 
 inputTexto.addEventListener('input', () => {
     if (nenhumTexto.style.display == 'none') {
-        respostaTexto.style.display = 'none';
+        containerResposta.style.display = 'none';
         nenhumTexto.style.display = 'block';
     }
 });
@@ -37,6 +38,6 @@ botaoDescriptografar.addEventListener('click', () => {
     texto = texto.replace(/ufat/g, "u");
 
     nenhumTexto.style.display = 'none';
-    respostaTexto.style.display = 'block';
+    containerResposta.style.display = 'flex';
     respostaTexto.value = texto;
 });
