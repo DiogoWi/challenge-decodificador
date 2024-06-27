@@ -183,7 +183,6 @@ footer ul {
     list-style: none;
     width: 250px;
     margin-top: 20px;
-    /* border: 1px solid red; */
 }
 
 footer li {
@@ -234,7 +233,7 @@ footer ion-icon {
     }
 
     #section_texto {
-        height: 710px;
+        height: 680px;
         max-width: 680px;
         width: 100%;
     }
