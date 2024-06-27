@@ -49,3 +49,20 @@ botaoDescriptografar.addEventListener('click', () => {
     containerResposta.style.display = 'flex';
     respostaTexto.value = texto;
 });
+
+const botaoCopiar = document.querySelector('#copiar');
+
+botaoCopiar.addEventListener('click', () => {
+    if (botaoCopiar.innerText == 'Copiar') {
+        navigator.clipboard.writeText(respostaTexto.value)
+        .then(() => {
+            botaoCopiar.classList.add('copiado');
+            botaoCopiar.innerText = 'Copiado';
+    
+            setTimeout(() => {
+                botaoCopiar.classList.remove('copiado');
+                botaoCopiar.innerText = 'Copiar';
+            }, 3000);
+        });
+    }
+})
