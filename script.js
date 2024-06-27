@@ -6,6 +6,10 @@ const respostaTexto = document.querySelector('#resposta');
 const nenhumTexto = document.querySelector('#nenhum_texto');
 
 botaoCriptografar.addEventListener('click', () => {
+    if (inputTexto.value == '') {
+        return;
+    }
+
     let texto = inputTexto.value;
 
     texto = texto.replace(/e/g, "enter");
@@ -29,6 +33,10 @@ inputTexto.addEventListener('input', () => {
 const botaoDescriptografar = document.querySelector('#descriptografar');
 
 botaoDescriptografar.addEventListener('click', () => {
+    if (inputTexto.value == '') {
+        return;
+    }
+
     let texto = inputTexto.value;
 
     texto = texto.replace(/enter/g, "e");
