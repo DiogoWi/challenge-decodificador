@@ -110,6 +110,15 @@ logo.addEventListener('click', () => {
     }
 })
 
+logo.addEventListener('blur', () => {
+    menu.classList.remove('ativado');
+    menu.style.transform = 'translateY(0)';
+    menu.style.opacity = '0';
+    setTimeout(() => {
+        menu.style.display = 'none';
+    }, 100);
+})
+
 // função alterar cor
 const botoes = [...document.querySelectorAll('menu > button')];
 
