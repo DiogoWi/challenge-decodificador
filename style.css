@@ -136,10 +136,16 @@ textarea {
     border-radius: 24px;
     color: hsl(var(--cor-secundaria), 84%, 24%);
     cursor: pointer;
+    transition: all .2s;
 }
 
 #copiar:hover {
     background-color: hsl(var(--cor-primaria), 14%, 83%);
+}
+
+#copiar.copiado {
+    background-color: hsl(var(--cor-secundaria), 84%, 24%);
+    color: white;
 }
 
 #section_resposta img {
