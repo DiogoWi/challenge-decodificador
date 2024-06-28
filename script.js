@@ -31,11 +31,11 @@ botaoCriptografar.addEventListener('click', () => {
         return;
     }
 
-    regex = /([a-z0-9\s])/
+    regex = /([!-@[-~\s])/
 
     for (const i of inputTexto.value) {
         if (!regex.test(i)) {
-            alert('Por favor não use letras maiúsculas nem mesmo caracteres especiais!!!');
+            alert('Por favor não use letras maiúsculas nem mesmo letras com acentuação!!!');
             return
         }
     }
@@ -60,11 +60,11 @@ botaoDescriptografar.addEventListener('click', () => {
         return;
     }
 
-    regex = /([a-z0-9\s])/
+    regex = /([!-@[-~\s])/
 
     for (const i of inputTexto.value) {
         if (!regex.test(i)) {
-            alert('Por favor não use letras maiúsculas nem mesmo caracteres especiais!!!');
+            alert('Por favor não use letras maiúsculas nem mesmo letras com acentuação!!!');
             return
         }
     }
