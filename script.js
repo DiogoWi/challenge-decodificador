@@ -1,3 +1,23 @@
+// verificar tema do navegador ao carregar a página
+const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+window.addEventListener('load', () => {
+    if (prefersColorScheme.matches) {
+        document.querySelector("link[rel='shortcut icon']").href = "images/iconB.png";
+    } else {
+        document.querySelector("link[rel='shortcut icon']").href = "images/icon.png";
+    }
+});
+
+// verifica a troca de tema
+prefersColorScheme.addListener((event) => {
+    if (event.matches) {
+        document.querySelector("link[rel='shortcut icon']").href = "images/iconB.png";
+    } else {
+        document.querySelector("link[rel='shortcut icon']").href = "images/icon.png";
+    }
+});
+
 // funções criptografar/descriptografar
 const botaoCriptografar = document.querySelector('#criptografar');
 const inputTexto = document.querySelector('#texto');
