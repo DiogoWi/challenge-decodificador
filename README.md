@@ -25,5 +25,5 @@ Para mudar a cor do Decodificador, clique na logo da Alura para abrir o menu de 
 ---
 Diverta-se com seus amigos 👍
 
-👉 Projeto [AluraGeek](https://github.com/DiogoWi/AluraGeek)
+👉 Projeto [Decodificador](https://diogowi.github.io/challenge-decodificador/)
 ### Feito por [Diogo Willian](https://github.com/DiogoWi)
